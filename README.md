@@ -1,4 +1,4 @@
-Vagrant script for providing development environment of ElasticSearch + Kibana Docker with SearchGuard plugin installed. Both ElasticSearch and Kibana will run with default ports exposed.
+Vagrant script for providing development environment of ElasticSearch + Kibana Docker v5 with SearchGuard plugin installed. Both ElasticSearch and Kibana will run with default ports exposed.
 
 The `data` folder will contain the ElasticSearch data.
 
@@ -19,3 +19,9 @@ Scripts
 `/vagrant/load_sg_config.sh` is bash script for loading SearchGuard configs.
 
 You can run the scripts inside the machine via `vagrant ssh`.
+
+Versions
+---
+You can change the ElasticSearch/Kibana version in `Vagrantfile`.
+
+Note: only tested with ElasticSearch/Kibana v5.0.x. Previous versions are not supported.
