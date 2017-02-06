@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: $esTPort, host: $esTPort
   config.vm.network :forwarded_port, guest: $kibanaPort, host: $kibanaPort
 
-  config.vm.synced_folder "data", "/vagrant/data", :mount_options => ['dmode=775','fmode=664']
+  config.vm.synced_folder "data", "/vagrant/data", :mount_options => ['dmode=777','fmode=666']
 
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
