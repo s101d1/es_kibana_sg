@@ -40,7 +40,6 @@ sg_all_access:
   users:
     - admin
     - adm
-    - bill
 
 sg_public:
   users:
